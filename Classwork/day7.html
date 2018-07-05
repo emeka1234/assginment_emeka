@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<form action="">
+	First name:<br>
+	<input type="text" name="firstname" value="JimJonWong" size="40" maxlength="10">
+</form>
+
+<canvas id="myCanvas" width="800" height="800" style="border:1px solid
+#d3d3d3;"></canvas>
+
+<script>
+	var c= document.getElementById("myCanvas")
+	var ctx=c.getContext("2d");
+	ctx.moveTo(0,0);
+	ctx.lineTo(400,300);
+	ctx.stroke();
+</script>
+
+<script>
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	// ctx.beginPath();
+	// ctx.arc(95,50,40,0,2*Math.PI);
+	// ctx.stroke();
+</script>
+
+<script>
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.font="30px Arial";
+	ctx.fillText("Hello WIDE WORLD LALALA",32,73);
+	var grd=ctx.createLinearGradient(0,0,200,0);
+	grd.addColorStop(0,"blue");
+	grd.addColorStop(1,"Red");
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,150,80);
+	var grd=ctx.createRadialGradient(75,50,100,123,981,21);
+</script>
+
+
+</body>
+</html>
